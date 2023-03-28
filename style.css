@@ -38,15 +38,15 @@ body {
     font-size: 15px;
     font-style: normal;
     margin: 0;
-    background-color: #F2F2F2;
+   
 }
 
 img {
     display: block;
 }
 
-.contanier {
-    width: 1148px;
+.container {
+    width: 1150px;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -76,7 +76,7 @@ img {
     height: 32px;
 }
 
-.site-header__nav {}
+
 
 .site-header__list {
     display: flex;
@@ -113,9 +113,10 @@ img {
     line-height: 23px;
     color: #9E9AA8;
     text-decoration: none;
+}
 
-
-
+.site-header__nav-link:hover {
+    color: #34313D;
 }
 
 .site-header__forma {
@@ -123,7 +124,7 @@ img {
     justify-content: space-between;
     align-items: center;
     margin-left: auto;
-    gap: 61px;
+    gap:37px;
 
 
 }
@@ -135,7 +136,9 @@ img {
 
 
 }
-
+.site-header__forma-link:hover {
+    color: #34313D;
+}
 .site-header__forma-link--link-second {
     font-weight: 700;
     padding: 9px 23px 8px 24px;
@@ -144,6 +147,13 @@ img {
     text-decoration: none;
     background-color: #2BD0D0;
     border-radius: 28px;
+}
+
+
+.site-header__forma-link--link-second:hover {
+    background: #9AE3E3;
+    color:#FFFFFF;
+
 }
 
 .site-section {
@@ -164,10 +174,6 @@ img {
 
 
 }
-
-.site-section__bg-part {}
-
-
 
 .site-section__text-part {
     width: 565px;
@@ -202,6 +208,7 @@ img {
 }
 
 .site-section__link-get {
+    display: inline-block;
     padding: 14px 40px;
     font-weight: 700;
     font-size: 20px;
@@ -210,6 +217,10 @@ img {
     background-color: #2BD0D0;
     border-radius: 28px;
     color: #FFFFFF;
+}
+
+.site-section__link-get:hover {
+    background: #9AE3E3;
 }
 
 .section-form {
@@ -221,7 +232,8 @@ img {
 }
 
 input {
-    margin-right: 24px;
+    margin-right: 18px;
+    padding: 14px 20px;
     background: #FFFFFF;
     border-radius: 10px;
     font-weight: 500;
@@ -230,7 +242,7 @@ input {
     letter-spacing: 0.15px;
     color: #34313D;
     outline: none;
-    padding: 14px 32px;
+
     border: none;
     width: 769px;
 
@@ -251,8 +263,14 @@ button {
     border: none;
 }
 
+button:hover {
+    background: #9AE3E3;
+
+}
+
 .section-second {
     padding-bottom: 120px;
+    background-color:#f2f2f2;
 }
 
 .section-second__text-part {
@@ -309,11 +327,10 @@ button {
     background-repeat: no-repeat;
     top: calc(50% + 20px);
 }
-
 .section-second__item {
     position: relative;
     z-index: 1;
-
+    border-radius: 5px;
     width: 350px;
     padding: 77px 32px 41px 32px;
     background-color: #FFFFFF;
@@ -382,15 +399,21 @@ button {
     color: #9E9AA8;
 }
 
-.site-footer__top {
-    position: relative;
+.site-aside {
     background-image: url("./images/foot-bg.svg");
+    background-size: 100% 250px;
     height: 250px;
     background-repeat: no-repeat;
+    text-align: center;
+
+
+
+
 
 }
 
-.site-footer__bold-text {
+.site-aside__bold-text {
+    margin-bottom: 46px;
     padding-top: 57px;
     display: block;
     font-weight: 700;
@@ -400,10 +423,107 @@ button {
     letter-spacing: -1px;
     color: #FFFFFF;
 
+
 }
 
-.site-section__link-get--linksec {
-    position: absolute;
-    top: calc(50%);
-    left: calc(50% - 100px);
+
+.site-aside__inik-getsec {
+    padding: 14px 40px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    background: #2BD0D0;
+    border-radius: 28px;
+    text-decoration: none;
+}
+
+.site-aside__inik-getsec:hover {
+    background: #9AE3E3;
+
+}
+
+.site-footer {
+    background: #232127;
+
+
+}
+
+.site-footer--wrapper {
+    display: flex;
+    padding-top: 71px;
+    padding-bottom: 70px;
+
+}
+
+.site-footer__list--list-second {
+    display: flex;
+}
+
+.site-footer__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.site-footer__img {
+    margin-right: 261px;
+}
+
+.site-footer__bold-text {
+    margin-right: 110px;
+
+
+}
+
+.site-footer-item--first {
+    margin-bottom: 22px;
+}
+
+.site-footer__item {
+    margin-right: 24px;
+    margin-bottom: 10px;
+}
+
+.site-footer__item--last {
+    margin: 0;
+}
+
+.site-footer__bold-text {
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: #FFFFFF;
+}
+
+.site-footer__link {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.234375px;
+    text-decoration: none;
+    color: #BFBFBF;
+
+}
+
+.site-footer__link:hover {
+    color: #2BD0D0;
+}
+
+
+.site-footer__list--list-second {
+
+    margin-left: auto;
+}
+
+.site-footer__linkos {
+    color: #FFFFFF;
+}
+
+.site-footer__linkos:hover {
+    color: #2BD0D0;
 }
